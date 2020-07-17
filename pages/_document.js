@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content={theme.palette.primary.main} />
           <meta property="og:title" content="Mathieu PICCARRETA" />
           <meta property="og:url" content="https://www.mathieu-piccarreta.com/" />
-          <meta property="og:image" content="https://imgur.com/54flYJw.png" />
+          <meta property="og:image" content="http://imgur.com/54flYJw.png" />
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
