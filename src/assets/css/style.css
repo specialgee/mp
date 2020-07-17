@@ -13,6 +13,36 @@
     font-family: 'AlfaSlabOne-Regular';
     src: url('/fonts/AlfaSlabOne-Regular.ttf');
 }
+
+
+.fade-in {
+    animation: fadeIn ease 0.8s;
+}
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
 /* GENERAL */
 
 html {
