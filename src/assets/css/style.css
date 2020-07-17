@@ -190,6 +190,7 @@ footer {
   /* Individual item */
   .bm-item {
     display: inline-block;
+    color: #0048ff;
   }
   
 /* Styling of overlay */
