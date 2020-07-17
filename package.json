@@ -10,7 +10,8 @@
     "prop-types": "latest",
     "react": "latest",
     "react-burger-menu": "^2.7.0",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-fade-in": "^1.1.0"
   },
   "scripts": {
     "dev": "next",
