@@ -287,8 +287,19 @@ footer {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
     .main-title {
         font-size: 12vw !important;
+    }
+
+    .page-home .MuiContainer-root {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .page-home .MuiGrid-item {
+        max-width: 70% !important;
+        margin: 0 auto !important;
     }
 }
 
@@ -303,6 +314,7 @@ footer {
         position: relative !important;
         bottom: 2em !important;
     }     */
+    
 }
   
 /* Large screens height */

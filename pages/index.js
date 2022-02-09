@@ -92,7 +92,7 @@ function Album() {
           </Grid>
         </Toolbar>
       </AppBar>
-      <main>
+      <main className="page-home">
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="md">
