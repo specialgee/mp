@@ -118,12 +118,12 @@ function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="outlined" color="primary">
+                  <Button variant="contained" color="primary">
                     <Link color="inherit" href="/videos">Videos</Link>
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button variant="outlined" color="primary">
                     <Link color="inherit" href="/articles">Articles</Link>
                   </Button>
                 </Grid>
@@ -141,69 +141,38 @@ function Album() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="sm">
+        <Container className={classes.cardGrid, "page-melty"} maxWidth="sm">
           {/* End hero unit */}
-          <Grid container spacing={4}>
-            {/* {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))} */}
+          
+          <Grid item xs={6} sm={6} md={6}>
+            <Card className={classes.card, "melty-logo melty-logo-video"}>
+                <CardMedia
+                className={classes.cardMedia}
+                image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2lOOwZ_9GIe4iAd1ADY12rjDXt1J0hVplpPWrO5H9L1RDQk0CizWEIoleMaRucEQgQ&usqp=CAU"
+                title=""
+                />
+                {/* <CardActions>
+                <Button size="small" color="primary">
+                    <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">KONBINI</Link>
+                </Button>
+                </CardActions> */}
+            </Card>
+          </Grid>
 
-            <Grid item xs={6} sm={6} md={6}>
-                <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">
-                    <Card className={classes.card}>
-                        <CardMedia
-                        className={classes.cardMedia}
-                        image="https://cdn-www.konbini.com/fr/_next/static/images/konbiniLogo-black-7118418ffb8029ef7269a78dc48a4604.png"
-                        title=""
-                        />
-                        {/* <CardActions>
-                        <Button size="small" color="primary">
-                            <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">KONBINI</Link>
-                        </Button>
-                        </CardActions> */}
-                    </Card>
-                </Link>
-            </Grid>
-            <Grid item xs={6} sm={6} md={6}>
-                <Link color="inherit" href="https://www.voici.fr/google_search/search?q=mathieu+piccarreta" target="_blank">
-                    <Card className={classes.card}>
-                        <CardMedia
-                        className={classes.cardMedia}
-                        image="https://creas.prismamediadigital.com/people/logos/voici_logo.svg"
-                        title=""
-                        />
-                    </Card>
-                </Link>
+          
+          <Grid container>
+            <Grid item>
+              <Card className={classes.card}>
+                <iframe src="https://drive.google.com/file/d/1AM955Mv7Ou5l8y_0b49ND5z6RwJWlBtU/preview" width="640" height="480" allow="autoplay" allowFullScreen={true}></iframe>
+              </Card>
             </Grid>
           </Grid>
+
+
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer, "footer page-footer"}>
+      <footer className={classes.footer, "footer page-footer footer-melty"}>
         {/* <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>

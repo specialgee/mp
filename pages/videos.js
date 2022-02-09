@@ -103,24 +103,22 @@ function Album() {
             </Link>
             <Typography variant="h5" align="center">
               <p className="main-subtitle"> Journaliste Vidéo / Rédacteur / Chroniqueur / Coordinateur Radio </p>
-              <p className="main-description">
+              {/* <p className="main-description">
+                📞<Link color="inherit" href="https://rmc.bfmtv.com/" target="_blank"> RMC, </Link>
+                🎙️<Link color="inherit" href="https://www.radiocampusparis.org/" target="_blank"> Radio Campus Paris, </Link>
+                ✍️<Link color="inherit" href="https://www.conflits.info/" target="_blank"> Conflits, </Link>
+                <br></br>
                 <span className="subtitle-small-text"> passé par </span>
-                🎥<Link color="inherit" href="#" target="_blank"> Brut, </Link>
                 <Link color="inherit" href="https://www.melty.fr/" target="_blank"> Melty, </Link>
-                🎙️<Link color="inherit" href="https://rmc.bfmtv.com/" target="_blank"> RMC, </Link>
-                <Link color="inherit" href="https://www.radiocampusparis.org/" target="_blank"> Radio Campus Paris, </Link>
-                <br></br>
-                ✍️<Link color="inherit" href="https://www.publicisgroupe.com/fr/services-fr/services-publicis-media-fr" target="_blank"> Publicis Media, </Link>
                 <Link color="inherit" href="https://www.konbini.com/fr" target="_blank"> Konbini, </Link>
+                <Link color="inherit" href="https://www.publicisgroupe.com/fr/services-fr/services-publicis-media-fr" target="_blank"> Publicis Media, </Link>
                 <Link color="inherit" href="http://rockyrama.com/" target="_blank"> Rockyrama </Link>
-                {/* <Link color="inherit" href="https://www.conflits.info/" target="_blank"> Conflits, </Link> */}
-                <br></br>
-              </p>
+              </p> */}
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
-              <Grid item>
-                  <Button variant="outlined" color="primary">
+                <Grid item>
+                  <Button variant="contained" color="primary">
                     <Link color="inherit" href="/videos">Videos</Link>
                   </Button>
                 </Grid>
@@ -143,7 +141,7 @@ function Album() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="sm">
           {/* End hero unit */}
           <Grid container spacing={4}>
             {/* {cards.map((card) => (
@@ -174,77 +172,38 @@ function Album() {
               </Grid>
             ))} */}
 
-            <Grid item xs={12} sm={6} md={3}>
-              <Link color="inherit" href="/brut">
-                <Card className={classes.card, "brut-logo"}>
-                    <CardMedia
-                    className={classes.cardMedia}
-                    image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brut_logo.svg/1280px-Brut_logo.svg.png"
-                    title=""
-                    />
-                </Card>
-              </Link>
+            <Grid item xs={6} sm={6} md={6}>
+                <Link color="inherit" href="/brut" >
+                    <Card className={classes.card, "brut-logo"}>
+                        <CardMedia
+                        className={classes.cardMedia}
+                        image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brut_logo.svg/1280px-Brut_logo.svg.png"
+                        title=""
+                        />
+                        {/* <CardActions>
+                        <Button size="small" color="primary">
+                            <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">KONBINI</Link>
+                        </Button>
+                        </CardActions> */}
+                    </Card>
+                </Link>
             </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Link color="inherit" href="/melty" >
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.cardMedia}
-                    image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2lOOwZ_9GIe4iAd1ADY12rjDXt1J0hVplpPWrO5H9L1RDQk0CizWEIoleMaRucEQgQ&usqp=CAU"
-                    title=""
-                    />
-                </Card>
-              </Link>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.cardMedia}
-                    image="https://cdn-www.konbini.com/fr/_next/static/images/konbiniLogo-black-7118418ffb8029ef7269a78dc48a4604.png"
-                    title=""
-                    />
-                </Card>
-              </Link>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-                <Link color="inherit" href="https://www.voici.fr/google_search/search?q=mathieu+piccarreta" target="_blank">
+            <Grid item xs={6} sm={6} md={6}>
+                <Link color="inherit" href="/melty" >
                     <Card className={classes.card}>
                         <CardMedia
                         className={classes.cardMedia}
-                        image="https://creas.prismamediadigital.com/people/logos/voici_logo.svg"
+                        image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw2lOOwZ_9GIe4iAd1ADY12rjDXt1J0hVplpPWrO5H9L1RDQk0CizWEIoleMaRucEQgQ&usqp=CAU"
                         title=""
                         />
                     </Card>
                 </Link>
             </Grid>
-            {/* <Grid item xs={12} sm={6} md={3}>
-                <Link color="inherit" href="https://www.radiocampusparis.org/la-matinale-de-19h-les-economistes-atterres-18-02-2020/" target="_blank">
-                    <Card className={classes.card}>
-                        <CardMedia
-                        className={classes.cardMedia}
-                        image="https://upload.wikimedia.org/wikipedia/commons/c/c1/Logo_Radio_Campus_Paris.png"
-                        title=""
-                        />
-                    </Card>
-                </Link>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-                <Link color="inherit" href="https://vl-media.fr/100-histoire-toutes-epoques-au-fil-des-siecles-49" target="_blank">
-                    <Card className={classes.card}>
-                        <CardMedia
-                        className={classes.cardMedia}
-                        image="https://vl-media.fr/wp-content/uploads/2019/05/Logo_clair_alpha.png"
-                        title=""
-                        />
-                    </Card>
-                </Link>
-            </Grid> */}
           </Grid>
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer, "main-footer"}>
+      <footer className={classes.footer, "footer page-footer"}>
         {/* <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>

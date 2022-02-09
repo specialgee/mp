@@ -22,7 +22,7 @@ function Copyright() {
     <Typography variant="body2" color="primary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="/">
-        Mathieu PICCARRETA
+        Mathieu Piccarreta
       </Link>{' '}
       {new Date().getFullYear()}
     </Typography>
@@ -90,11 +90,13 @@ function Album() {
         {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="md">
-            <Typography className="main-title" component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              MATHIEU PICCARRETA
-            </Typography>
+            <Link color="inherit" href="/">
+              <Typography className="main-title" component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+                MATHIEU PICCARRETA
+              </Typography>
+            </Link>
             <Typography variant="h5" align="center">
-              <p className="main-subtitle"> Rédacteur / Chroniqueur / Coordinateur Radio </p>
+             <p className="main-subtitle"> Journaliste Vidéo / Rédacteur / Chroniqueur / Coordinateur Radio </p>
               {/* <p className="main-description">
                 📞<Link color="inherit" href="https://rmc.bfmtv.com/" target="_blank"> RMC, </Link>
                 🎙️<Link color="inherit" href="https://www.radiocampusparis.org/" target="_blank"> Radio Campus Paris, </Link>
@@ -109,6 +111,11 @@ function Album() {
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <Button variant="outlined" color="primary">
+                    <Link color="inherit" href="/videos">Videos</Link>
+                  </Button>
+                </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary">
                     <Link color="inherit" href="/articles">Articles</Link>
@@ -137,7 +144,7 @@ function Album() {
                         <CardMedia
                         className={classes.cardMedia}
                         image="https://upload.wikimedia.org/wikipedia/commons/c/c1/Logo_Radio_Campus_Paris.png"
-                        title="Image Logo"
+                        title=""
                         />
                     </Card>
                 </Link>
@@ -148,7 +155,7 @@ function Album() {
                         <CardMedia
                         className={classes.cardMedia}
                         image="https://vl-media.fr/wp-content/uploads/2019/05/Logo_clair_alpha.png"
-                        title="Image Logo"
+                        title=""
                         />
                     </Card>
                 </Link>
@@ -157,7 +164,7 @@ function Album() {
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer, "category-footer"}>
+      <footer className={classes.footer, "footer page-footer"}>
         <Copyright />
       </footer>
       {/* End footer */}

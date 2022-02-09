@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.primary.main} />
-          <meta property="og:title" content="Mathieu PICCARRETA" />
+          <meta property="og:title" content="Mathieu Piccarreta" />
           <meta property="og:url" content="https://www.mathieu-piccarreta.com/" />
           <meta property="og:image" content="http://imgur.com/54flYJw.png" />
           <link

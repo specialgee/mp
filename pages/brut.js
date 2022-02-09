@@ -118,12 +118,12 @@ function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="outlined" color="primary">
+                  <Button variant="contained" color="primary">
                     <Link color="inherit" href="/videos">Videos</Link>
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="contained" color="primary">
+                  <Button variant="outlined" color="primary">
                     <Link color="inherit" href="/articles">Articles</Link>
                   </Button>
                 </Grid>
@@ -141,69 +141,57 @@ function Album() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="sm">
+        <Container className={classes.cardGrid, "page-brut"} maxWidth="sm">
           {/* End hero unit */}
-          <Grid container spacing={4}>
-            {/* {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))} */}
-
-            <Grid item xs={6} sm={6} md={6}>
-                <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">
-                    <Card className={classes.card}>
-                        <CardMedia
-                        className={classes.cardMedia}
-                        image="https://cdn-www.konbini.com/fr/_next/static/images/konbiniLogo-black-7118418ffb8029ef7269a78dc48a4604.png"
-                        title=""
-                        />
-                        {/* <CardActions>
-                        <Button size="small" color="primary">
-                            <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">KONBINI</Link>
-                        </Button>
-                        </CardActions> */}
-                    </Card>
-                </Link>
-            </Grid>
-            <Grid item xs={6} sm={6} md={6}>
-                <Link color="inherit" href="https://www.voici.fr/google_search/search?q=mathieu+piccarreta" target="_blank">
-                    <Card className={classes.card}>
-                        <CardMedia
-                        className={classes.cardMedia}
-                        image="https://creas.prismamediadigital.com/people/logos/voici_logo.svg"
-                        title=""
-                        />
-                    </Card>
-                </Link>
-            </Grid>
+          
+          <Grid item xs={6} sm={6} md={6}>
+            <Card className={classes.card, "brut-logo brut-logo-video"}>
+                <CardMedia
+                className={classes.cardMedia}
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Brut_logo.svg/1280px-Brut_logo.svg.png"
+                title=""
+                />
+                {/* <CardActions>
+                <Button size="small" color="primary">
+                    <Link color="inherit" href="https://www.konbini.com/fr/author/mpiccarreta" target="_blank">KONBINI</Link>
+                </Button>
+                </CardActions> */}
+            </Card>
           </Grid>
+
+          
+          <Grid container spacing={4}>
+            <Grid item md={6}>
+              <Card className={classes.card}>
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbrutofficiel%2Fvideos%2F258528492432131%2F&show_text=false&width=267&t=0" width="267" height="591" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+              </Card>
+            </Grid>
+
+            <Grid item md={6}>
+              <Card className={classes.card}>
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbrutofficiel%2Fvideos%2F526187808595526%2F&show_text=false&width=267&t=0" width="267" height="591" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+              </Card>
+            </Grid>
+
+            {/* <Grid item md={6}>
+              <Card className={classes.card}>
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbrutofficiel%2Fvideos%2F258528492432131%2F&show_text=false&width=267&t=0" width="267" height="591" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+              </Card>
+            </Grid>
+
+            <Grid item md={6}>
+              <Card className={classes.card}>
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fbrutofficiel%2Fvideos%2F258528492432131%2F&show_text=false&width=267&t=0" width="267" height="591" scrolling="no" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" ></iframe>
+              </Card>
+            </Grid> */}
+
+          </Grid>
+
+
         </Container>
       </main>
       {/* Footer */}
-      <footer className={classes.footer, "footer page-footer"}>
+      <footer className={classes.footer, "footer page-footer footer-brut"}>
         {/* <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
