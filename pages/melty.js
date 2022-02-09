@@ -163,7 +163,7 @@ function Album() {
           <Grid container>
             <Grid item>
               <Card className={classes.card}>
-                <iframe src="https://drive.google.com/file/d/1AM955Mv7Ou5l8y_0b49ND5z6RwJWlBtU/preview" width="640" height="480" allow="autoplay" allowFullScreen={true}></iframe>
+                <iframe className="melty-iframe" src="https://drive.google.com/file/d/1AM955Mv7Ou5l8y_0b49ND5z6RwJWlBtU/preview" width="640" height="480" allow="autoplay" allowFullScreen={true}></iframe>
               </Card>
             </Grid>
           </Grid>

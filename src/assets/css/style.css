@@ -301,6 +301,13 @@ footer {
         max-width: 70% !important;
         margin: 0 auto !important;
     }
+
+    .melty-iframe {
+        width: 100%;
+        height: auto;
+        min-width: 350px;
+        min-height: 225px;
+    }
 }
 
 /* Mobile landscape mode */
