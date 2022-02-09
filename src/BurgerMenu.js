@@ -10,6 +10,7 @@ class BurgerMenu extends React.Component {
     return (
       <Menu>
         <a id="home" className="menu-item" href="/">HOME</a>
+        <a id="videos" className="menu-item" href="/videos">VIDEOS</a>
         <a id="articles" className="menu-item" href="/articles">ARTICLES</a>
         <a id="podcasts" className="menu-item" href="/podcasts">PODCASTS</a>
         <a id="contact" className="menu-item" href="/contact">CONTACT</a>
